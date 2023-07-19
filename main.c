@@ -5,7 +5,7 @@
 double myRoot(double x) // x の平方根を返す関数。x >= 0 ではないとき exit(1) とする。 //小数を返すため、intではなくdoubleにした。
 {
   double y;
-  if( x < 0 ){ //x>=0ではないとき、つまりx<0である。
+  if( !(x >= 0) ){ //x>=0ではないときを表す
     exit(1);
   }
   y = sqrt(x);
